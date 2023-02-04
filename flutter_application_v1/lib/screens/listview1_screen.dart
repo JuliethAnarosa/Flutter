@@ -11,8 +11,21 @@ class ListView1Screen extends StatelessWidget {
         backgroundColor: Colors.pink.shade300,
         shadowColor: Color.fromARGB(255, 199, 130, 153),
       ),
-      body: Center(
-        child: const Text('ListView'),
+      body: ListView(
+        children: [
+          ListTile(
+            leading: Icon(Icons.access_alarm_rounded),
+            title: Text('Hola mundo'),
+          ),
+          ListTile(
+            leading: Icon(Icons.access_alarm_rounded),
+            title: Text('Hola mundo'),
+          ),
+          ListTile(
+            leading: Icon(Icons.access_alarm_rounded),
+            title: Text('Hola mundo'),
+          ),
+        ],
       ),
     );
   }
