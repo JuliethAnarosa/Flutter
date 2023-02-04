@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_v1/screens/alert_screen.dart';
-import 'package:flutter_application_v1/screens/card_screen.dart';
-import 'package:flutter_application_v1/screens/listview1_screen.dart';
-import 'package:flutter_application_v1/screens/listview2_screen.dart';
+import 'screens/screens.dart';
 
 void main() {
   runApp(const MyApp());
