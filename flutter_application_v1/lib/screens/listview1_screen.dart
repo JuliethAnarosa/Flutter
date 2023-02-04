@@ -19,17 +19,11 @@ class ListView1Screen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile(
-            leading: Icon(Icons.access_alarm_rounded),
-            title: Text('Hola mundo'),
-          ),
-          ListTile(
-            leading: Icon(Icons.access_alarm_rounded),
-            title: Text('Hola mundo'),
-          ),
-          ListTile(
-            leading: Icon(Icons.access_alarm_rounded),
-            title: Text('Hola mundo'),
+          ...options.map(
+            (game) => ListTile(
+              leading: Icon(Icons.ac_unit),
+              title: Text(game),
+            ),
           ),
         ],
       ),
