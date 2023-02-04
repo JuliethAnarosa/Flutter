@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: const CardScreen(),
+      // home: const CardScreen(),
+      initialRoute: 'homescreen',
       routes: {
+        'homescreen': (BuildContext context) => const HomeScreen(),
         'listview1': (BuildContext context) => const ListView1Screen(),
         'listview2': (BuildContext context) => const ListView2Screen(),
         'cardscreen': (BuildContext context) => const CardScreen(),

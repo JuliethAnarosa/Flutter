@@ -13,7 +13,7 @@ class ListView2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ListView Bar'),
+        title: const Text('ListView2 Bar'),
         backgroundColor: Colors.pink.shade300,
         shadowColor: Color.fromARGB(255, 199, 130, 153),
         elevation: 10,
