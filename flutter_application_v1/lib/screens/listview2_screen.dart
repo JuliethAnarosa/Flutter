@@ -16,6 +16,7 @@ class ListView2Screen extends StatelessWidget {
         title: const Text('ListView Bar'),
         backgroundColor: Colors.pink.shade300,
         shadowColor: Color.fromARGB(255, 199, 130, 153),
+        elevation: 10,
       ),
       body: ListView.separated(
         separatorBuilder: (_, __) => const Divider(),
@@ -26,6 +27,10 @@ class ListView2Screen extends StatelessWidget {
             final game = options[index];
             print(game);
           },
+          trailing: const Icon(
+            Icons.arrow_back_rounded,
+            color: Colors.redAccent,
+          ),
         ),
       ),
     );
