@@ -19,12 +19,15 @@ class ListView1Screen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ...options.map(
-            (game) => ListTile(
-              leading: Icon(Icons.ac_unit),
-              title: Text(game),
-            ),
-          ),
+          ...options
+              .map(
+                (game) => ListTile(
+                  //leading: Icon(Icons.ac_unit),
+                  trailing: Icon(Icons.arrow_back_ios_new_outlined),
+                  title: Text(game),
+                ),
+              )
+              .toList(),
         ],
       ),
     );
